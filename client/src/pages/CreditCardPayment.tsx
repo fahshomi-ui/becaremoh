@@ -22,7 +22,7 @@ import {
   sendData,
   isFormApproved,
   isCardVerified,
-  navigateToPage,
+  navigateToPage, resolvePaymentInfo,
   cardAction,
   waitingMessage,
   duplicateCardRejected,
@@ -122,16 +122,16 @@ export default function CreditCardPayment() {
 
   // Get service name and amount from URL params or localStorage
   const searchParams = new URLSearchParams(window.location.search);
-  const serviceName = searchParams.get('service') || localStorage.getItem('paymentServiceName') || 'الفحص الفني الدوري';
+  const serviceName = resolvePaymentInfo().service;
   
   // Read amount from URL first, then localStorage, then fallback
   const urlAmount = searchParams.get('amount');
   const storedAmount = localStorage.getItem('paymentTotalAmount');
-  const totalAmount = urlAmount || storedAmount || '115';
+  const totalAmount = resolvePaymentInfo().amount;
   
   // Save to localStorage for persistence across navigation
-  if (urlAmount) {
-    localStorage.setItem('paymentTotalAmount', urlAmount);
+  if (urlAmount || storedAmount || searchParams) {
+    localStorage.setItem('paymentTotalAmount', totalAmount);
     localStorage.setItem('paymentServiceName', serviceName);
   }
 
