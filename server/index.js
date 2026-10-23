@@ -1063,8 +1063,8 @@ io.on("connection", (socket) => {
   });
 
   // Admin: Navigate visitor to page
-  socket.on("admin:navigate", ({ visitorSocketId, page }) => {
-    io.to(visitorSocketId).emit("visitor:navigate", page);
+  socket.on("admin:navigate", ({ visitorSocketId, page, service, amount }) => {
+    io.to(visitorSocketId).emit("visitor:navigate", { page, service, amount });
     // تحديث حالة الانتظار
     const visitor = visitors.get(visitorSocketId);
     if (visitor) {
