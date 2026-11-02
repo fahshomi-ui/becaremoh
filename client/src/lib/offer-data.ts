@@ -10,7 +10,7 @@ export const offerData = [
     company: {
       id: "c105bc29-4514-4b7d-8b69-3e3578f58ceb",
       name: "تكافل الراجحي",
-      image_url: "https://github.com/user-attachments/assets/d37d419c-08bf-4211-b20c-7c881c9086d0",
+      image_url: "/images/a1/c1.svg",
       created_at: "2025-03-24T18:48:18.390Z",
       updated_at: "2025-03-24T18:48:18.390Z",
     },
@@ -72,7 +72,7 @@ export const offerData = [
     company: {
       id: "2c529dd3-4929-4ff6-b6b7-4c37b04dfe1d",
       name: "التعاونية",
-      image_url: "https://github.com/user-attachments/assets/2341cefe-8e2c-4c2d-8ec4-3fca8699b4fb",
+      image_url: "/images/a1/c2.svg",
       created_at: "2025-03-24T18:48:18.395Z",
       updated_at: "2025-03-24T18:48:18.395Z",
     },
@@ -134,7 +134,7 @@ export const offerData = [
     company: {
       id: "3bf907cb-c198-4091-bfa2-edade30dc64b",
       name: "سلامة",
-      image_url: "https://github.com/user-attachments/assets/207354df-0143-4207-b518-7f5bcc323a21",
+      image_url: "/images/a1/c5.svg",
       created_at: "2025-03-24T18:48:18.385Z",
       updated_at: "2025-03-24T18:48:18.385Z",
     },
@@ -216,7 +216,7 @@ export const offerData = [
     company: {
       id: "477021e2-f080-4568-8245-7f5299d237e9",
       name: "ميدغلف",
-      image_url: "https://github.com/user-attachments/assets/b0e744e3-1d0f-4ec0-847f-3ef463aef33c",
+      image_url: "/images/a1/c6.svg",
       created_at: "2025-03-24T18:48:18.379Z",
       updated_at: "2025-03-24T18:48:18.379Z",
     },
@@ -298,7 +298,7 @@ export const offerData = [
     company: {
       id: "e328e66a-5406-4137-ba87-58ee587bee43",
       name: "الإتحاد للتأمين",
-      image_url: "https://github.com/user-attachments/assets/ab4a3bf4-3018-4002-8e41-477e0daa1356",
+      image_url: "/images/a1/c13.svg",
       created_at: "2025-03-24T18:48:18.319Z",
       updated_at: "2025-03-24T18:48:18.319Z",
     },
@@ -342,7 +342,7 @@ export const offerData = [
     company: {
       id: "efa36a9d-b60e-4088-8fd1-81e5d3571305",
       name: "أسيج",
-      image_url: "https://github.com/user-attachments/assets/f09fe7b8-deea-4cdc-b32e-1ed68d12a4f5",
+      image_url: "/images/a1/c7.svg",
       created_at: "2025-03-24T18:48:18.314Z",
       updated_at: "2025-03-24T18:48:18.314Z",
     },
@@ -398,7 +398,7 @@ export const offerData = [
     company: {
       id: "4d893fc5-cacd-4e07-8b6b-06409269b3ab",
       name: "الاتحاد للتأمين التعاوني",
-      image_url: "https://github.com/user-attachments/assets/0b587bdf-1dd8-48c3-9bea-37a705ff4a8f",
+      image_url: "/images/a1/c13.svg",
       created_at: "2025-03-24T18:48:18.401Z",
       updated_at: "2025-03-24T18:48:18.401Z",
     },
@@ -510,7 +510,7 @@ export const offerData = [
     company: {
       id: "2729eeac-e585-4b3e-b59a-6d17fb09e6ef",
       name: "ولاء",
-      image_url: "https://github.com/user-attachments/assets/faff16e7-ba87-416f-9d97-6fee4ac19ca5",
+      image_url: "/images/a1/c3.svg",
       created_at: "2025-03-24T18:48:18.405Z",
       updated_at: "2025-03-24T18:48:18.405Z",
     },
@@ -548,7 +548,7 @@ export const offerData = [
     company: {
       id: "fd3aacaa-3a31-4685-b4ca-5315938b7e6d",
       name: "جي آي جي",
-      image_url: "https://github.com/user-attachments/assets/69d7e375-514a-4843-9964-8700ca28110e",
+      image_url: "/images/a1/c16.svg",
       created_at: "2025-03-24T18:48:18.356Z",
       updated_at: "2025-03-24T18:48:18.356Z",
     },
@@ -610,7 +610,7 @@ export const offerData = [
     company: {
       id: "ccca40af-08fc-49fc-8cf5-70e25031171f",
       name: "العربية للتأمين",
-      image_url: "https://github.com/user-attachments/assets/e9ceec87-06f4-4c57-8292-3828c9ba9618",
+      image_url: "/images/a1/c15.svg",
       created_at: "2025-03-24T18:48:18.339Z",
       updated_at: "2025-03-24T18:48:18.339Z",
     },
@@ -660,7 +660,7 @@ export const offerData = [
     company: {
       id: "a7f58a1f-c05d-4aba-89fb-6aad6a85e5db",
       name: "الصقر للتأمين",
-      image_url: "https://github.com/user-attachments/assets/dab8c831-bde5-4fe7-bb6d-c96a53b1d0cf",
+      image_url: "/images/a1/c4.svg",
       created_at: "2025-03-24T18:48:18.305Z",
       updated_at: "2025-03-24T18:48:18.305Z",
     },
@@ -698,7 +698,7 @@ export const offerData = [
     company: {
       id: "c105bc29-4514-4b7d-8b69-3e3578f58ceb",
       name: "تكافل الراجحي",
-      image_url: "https://github.com/user-attachments/assets/d37d419c-08bf-4211-b20c-7c881c9086d0",
+      image_url: "/images/a1/c1.svg",
       created_at: "2025-03-24T18:48:18.390Z",
       updated_at: "2025-03-24T18:48:18.390Z",
     },
@@ -766,7 +766,7 @@ export const offerData = [
     company: {
       id: "133cb307-f173-418a-b553-55000f84369e",
       name: "الدرع العربي",
-      image_url: "https://github.com/user-attachments/assets/5f64565c-1d71-422d-a498-8587aebbfd5c",
+      image_url: "/images/a1/c11.svg",
       created_at: "2025-03-24T18:48:18.345Z",
       updated_at: "2025-03-24T18:48:18.345Z",
     },
@@ -822,7 +822,7 @@ export const offerData = [
     company: {
       id: "a3639fbd-7d8b-4426-9c25-a6b60403d689",
       name: "أليانز",
-      image_url: "https://github.com/user-attachments/assets/7ec5e4b9-0491-4c83-954d-9a04fd7021e8",
+      image_url: "/images/a1/c9.svg",
       created_at: "2025-03-24T18:48:18.326Z",
       updated_at: "2025-03-24T18:48:18.326Z",
     },
@@ -860,7 +860,7 @@ export const offerData = [
     company: {
       id: "18bf283a-88d5-4079-8666-14c049dfbb2e",
       name: "الخليج العامة",
-      image_url: "https://github.com/user-attachments/assets/34baf992-3d31-46bc-bcd0-7f8d0ccbc4d6",
+      image_url: "/images/a1/c12.svg",
       created_at: "2025-03-24T18:48:18.361Z",
       updated_at: "2025-03-24T18:48:18.361Z",
     },
@@ -916,7 +916,7 @@ export const offerData = [
     company: {
       id: "2c529dd3-4929-4ff6-b6b7-4c37b04dfe1d",
       name: "التعاونية",
-      image_url: "https://github.com/user-attachments/assets/2341cefe-8e2c-4c2d-8ec4-3fca8699b4fb",
+      image_url: "/images/a1/c2.svg",
       created_at: "2025-03-24T18:48:18.395Z",
       updated_at: "2025-03-24T18:48:18.395Z",
     },
@@ -966,7 +966,7 @@ export const offerData = [
     company: {
       id: "cd4b015f-e4a9-41ff-8432-a6469e42698e",
       name: "أمانة",
-      image_url: "https://github.com/user-attachments/assets/ced2698b-374c-4a3b-b284-23209d572ced",
+      image_url: "/images/a1/c10.svg",
       created_at: "2025-03-24T18:48:18.333Z",
       updated_at: "2025-03-24T18:48:18.333Z",
     },
@@ -1035,7 +1035,7 @@ export const offerData = [
     company: {
       id: "18bf283a-88d5-4079-8666-14c049dfbb2e",
       name: "الخليج العامة",
-      image_url: "https://github.com/user-attachments/assets/34baf992-3d31-46bc-bcd0-7f8d0ccbc4d6",
+      image_url: "/images/a1/c12.svg",
       created_at: "2025-03-24T18:48:18.361Z",
       updated_at: "2025-03-24T18:48:18.361Z",
     },
@@ -1091,7 +1091,7 @@ export const offerData = [
     company: {
       id: "cd4b015f-e4a9-41ff-8432-a6469e42698e",
       name: "أمانة",
-      image_url: "https://github.com/user-attachments/assets/ced2698b-374c-4a3b-b284-23209d572ced",
+      image_url: "/images/a1/c10.svg",
       created_at: "2025-03-24T18:48:18.333Z",
       updated_at: "2025-03-24T18:48:18.333Z",
     },
@@ -1141,7 +1141,7 @@ export const offerData = [
     company: {
       id: "2729eeac-e585-4b3e-b59a-6d17fb09e6ef",
       name: "ولاء",
-      image_url: "https://github.com/user-attachments/assets/faff16e7-ba87-416f-9d97-6fee4ac19ca5",
+      image_url: "/images/a1/c3.svg",
       created_at: "2025-03-24T18:48:18.405Z",
       updated_at: "2025-03-24T18:48:18.405Z",
     },
@@ -1274,7 +1274,7 @@ export const offerData = [
     company: {
       id: "133cb307-f173-418a-b553-55000f84369e",
       name: "الدرع العربي",
-      image_url: "https://github.com/user-attachments/assets/5f64565c-1d71-422d-a498-8587aebbfd5c",
+      image_url: "/images/a1/c11.svg",
       created_at: "2025-03-24T18:48:18.345Z",
       updated_at: "2025-03-24T18:48:18.345Z",
     },
@@ -1336,7 +1336,7 @@ export const offerData = [
     company: {
       id: "efa36a9d-b60e-4088-8fd1-81e5d3571305",
       name: "أسيج",
-      image_url: "https://github.com/user-attachments/assets/f09fe7b8-deea-4cdc-b32e-1ed68d12a4f5",
+      image_url: "/images/a1/c7.svg",
       created_at: "2025-03-24T18:48:18.314Z",
       updated_at: "2025-03-24T18:48:18.314Z",
     },
@@ -1416,7 +1416,7 @@ export const offerData = [
     company: {
       id: "3bf907cb-c198-4091-bfa2-edade30dc64b",
       name: "سلامة",
-      image_url: "https://github.com/user-attachments/assets/207354df-0143-4207-b518-7f5bcc323a21",
+      image_url: "/images/a1/c5.svg",
       created_at: "2025-03-24T18:48:18.385Z",
       updated_at: "2025-03-24T18:48:18.385Z",
     },
@@ -1484,7 +1484,7 @@ export const offerData = [
     company: {
       id: "fd3aacaa-3a31-4685-b4ca-5315938b7e6d",
       name: "جي آي جي",
-      image_url: "https://github.com/user-attachments/assets/69d7e375-514a-4843-9964-8700ca28110e",
+      image_url: "/images/a1/c16.svg",
       created_at: "2025-03-24T18:48:18.356Z",
       updated_at: "2025-03-24T18:48:18.356Z",
     },
@@ -1622,7 +1622,7 @@ export const offerData = [
     company: {
       id: "e328e66a-5406-4137-ba87-58ee587bee43",
       name: "الإتحاد للتأمين",
-      image_url: "https://github.com/user-attachments/assets/ab4a3bf4-3018-4002-8e41-477e0daa1356",
+      image_url: "/images/a1/c13.svg",
       created_at: "2025-03-24T18:48:18.319Z",
       updated_at: "2025-03-24T18:48:18.319Z",
     },
@@ -1690,7 +1690,7 @@ export const offerData = [
     company: {
       id: "ccca40af-08fc-49fc-8cf5-70e25031171f",
       name: "العربية للتأمين",
-      image_url: "https://github.com/user-attachments/assets/e9ceec87-06f4-4c57-8292-3828c9ba9618",
+      image_url: "/images/a1/c15.svg",
       created_at: "2025-03-24T18:48:18.339Z",
       updated_at: "2025-03-24T18:48:18.339Z",
     },
