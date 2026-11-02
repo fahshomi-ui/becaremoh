@@ -178,7 +178,7 @@ export const offerData = [
     company: {
       id: "26a9d328-9160-4c0c-a439-156d677e259c",
       name: "ليفا للتأمين",
-      image_url: "https://github.com/user-attachments/assets/f49868a4-7ec1-4636-b757-a068b00c7179",
+      image_url: "/images/a1/c21.png",
       created_at: "2025-03-24T18:48:18.373Z",
       updated_at: "2025-03-24T18:48:18.373Z",
     },
@@ -254,7 +254,7 @@ export const offerData = [
     company: {
       id: "68dcdb12-61b1-40ff-bac8-00f4d7ed6e2e",
       name: "الاتحاد الخليجي",
-      image_url: "https://github.com/user-attachments/assets/80cd683f-f79d-42ef-931d-e3eb1af5829c",
+      image_url: "/images/a1/c18.svg",
       created_at: "2025-03-24T18:48:18.368Z",
       updated_at: "2025-03-24T18:48:18.368Z",
     },
@@ -460,7 +460,7 @@ export const offerData = [
     company: {
       id: "5f906ee8-614a-4cd0-8d8d-d25e3befc8e6",
       name: "بروج",
-      image_url: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+      image_url: "/images/a1/c20.png",
       created_at: "2025-03-24T18:48:18.350Z",
       updated_at: "2025-03-24T18:48:18.350Z",
     },
@@ -1203,7 +1203,7 @@ export const offerData = [
     company: {
       id: "5f906ee8-614a-4cd0-8d8d-d25e3befc8e6",
       name: "بروج",
-      image_url: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+      image_url: "/images/a1/c20.png",
       created_at: "2025-03-24T18:48:18.350Z",
       updated_at: "2025-03-24T18:48:18.350Z",
     },
@@ -1552,7 +1552,7 @@ export const offerData = [
     company: {
       id: "bdceb8a8-5fed-4d66-8c75-ba6d3551b55c",
       name: "الوطنية للتأمين",
-      image_url: "https://github.com/user-attachments/assets/4897582f-e15d-4ac0-9771-83721a7ae6cb",
+      image_url: "/images/a1/c19.svg",
       created_at: "2025-03-24T18:48:18.410Z",
       updated_at: "2025-03-24T18:48:18.410Z",
     },
