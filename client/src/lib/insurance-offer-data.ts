@@ -73,7 +73,7 @@ export const medicalOfferData: InsuranceOffer[] = [
   {
     id: "med-004",
     companyName: "بروج",
-    companyLogo: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+    companyLogo: "/images/a1/c20.png",
     type: "medical",
     planName: "الفئة الذهبية",
     category: "ذهبية",
@@ -110,7 +110,7 @@ export const medicalOfferData: InsuranceOffer[] = [
   {
     id: "med-006",
     companyName: "ليفا للتأمين",
-    companyLogo: "https://github.com/user-attachments/assets/f49868a4-7ec1-4636-b757-a068b00c7179",
+    companyLogo: "/images/a1/c21.png",
     type: "medical",
     planName: "الفئة البرونزية",
     category: "برونزية",
@@ -251,7 +251,7 @@ export const malpracticeOfferData: InsuranceOffer[] = [
   {
     id: "mal-006",
     companyName: "بروج",
-    companyLogo: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+    companyLogo: "/images/a1/c20.png",
     type: "malpractice",
     planName: "تأمين أخطاء طبية",
     mainPrice: "736.00",
@@ -267,7 +267,7 @@ export const malpracticeOfferData: InsuranceOffer[] = [
   {
     id: "mal-007",
     companyName: "الاتحاد الخليجي",
-    companyLogo: "https://github.com/user-attachments/assets/80cd683f-f79d-42ef-931d-e3eb1af5829c",
+    companyLogo: "/images/a1/c18.svg",
     type: "malpractice",
     planName: "تأمين أخطاء طبية",
     mainPrice: "624.00",
@@ -393,7 +393,7 @@ export const travelOfferData: InsuranceOffer[] = [
   {
     id: "trv-006",
     companyName: "بروج",
-    companyLogo: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+    companyLogo: "/images/a1/c20.png",
     type: "travel",
     planName: "تأمين سفر شامل",
     mainPrice: "132.00",
@@ -410,7 +410,7 @@ export const travelOfferData: InsuranceOffer[] = [
   {
     id: "trv-007",
     companyName: "الاتحاد الخليجي",
-    companyLogo: "https://github.com/user-attachments/assets/80cd683f-f79d-42ef-931d-e3eb1af5829c",
+    companyLogo: "/images/a1/c18.svg",
     type: "travel",
     planName: "تأمين سفر أساسي",
     mainPrice: "68.00",
@@ -514,7 +514,7 @@ export const domesticOfferData: InsuranceOffer[] = [
   {
     id: "dom-006",
     companyName: "بروج",
-    companyLogo: "https://github.com/user-attachments/assets/75e4854c-72ef-4dfc-a8bd-09bc698b2cdf",
+    companyLogo: "/images/a1/c20.png",
     type: "domestic",
     planName: "تأمين العمالة المنزلية - الفئة ب",
     mainPrice: "292.00",
@@ -547,7 +547,7 @@ export const domesticOfferData: InsuranceOffer[] = [
   {
     id: "dom-008",
     companyName: "الاتحاد الخليجي",
-    companyLogo: "https://github.com/user-attachments/assets/80cd683f-f79d-42ef-931d-e3eb1af5829c",
+    companyLogo: "/images/a1/c18.svg",
     type: "domestic",
     planName: "تأمين العمالة المنزلية - الفئة ب",
     mainPrice: "265.60",
